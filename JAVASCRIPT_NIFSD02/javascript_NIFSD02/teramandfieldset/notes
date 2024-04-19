@@ -1,0 +1,60 @@
+Basic Entities uses in Body
+------------------------------------
+
+
+- line break            <br>
+- blank space            &nbsp;
+- pre-formatted        <pre>
+  It can present the content exactly as defined in source code.
+  It will not distrub the formats.
+ 
+Syntax:
+  <pre>
+    .... your content....
+  </pre>
+
+
+
+  - Address container :   <address>
+  It is used to define contact details.
+  It makes the address SEO friendly.
+
+
+
+
+  Summary:
+1. line break
+2. blank space
+3. pre-formatted
+4. code
+5. variable
+6. sample text
+7. address
+
+
+2. Fieldset and Legend
+    - Fieldset sets a frame for content.
+    - Legend sets a caption for frame.
+
+ Syntax:
+    <fieldset>
+        <legend> title </legend>
+        ........your content.........
+    </fieldset>
+
+
+     
+     
+     
+                       Various Containers for Presenting Text
+1. Data list with terms and definitions
+
+    - Data list is defined with <dl>
+    - Data list contains terms defined with <dt>
+    - Data list contains definition defined with <dd>
+
+Syntax:
+    <dl>
+        <dt> Term </dt>
+        <dd> Definition</dd>
+    </dl>

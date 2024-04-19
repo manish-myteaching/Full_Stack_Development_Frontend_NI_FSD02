@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       dl {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+       }
+       dt{
+        background-color: black;
+        color:white;
+        padding: 5px;
+        margin-bottom: 10px;
+       }
+       dd {
+        background-color: lightgray;
+        margin-bottom: 10px;
+        padding: 5px;
+       }
+       fieldset {
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 5px black;
+       }
+       legend {
+         background-color: darkcyan;
+         color:white;
+         font-size: 23px;
+         font-weight: bold;
+         padding: 6px;
+         text-align: center;
+         border-radius: 20px;
+         box-shadow: 5px 5px 5px black;
+       }
+    </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Personal Details</legend>
+    <dl>
+        <dt>First Name</dt>
+        <dd>your first name</dd>
+        <dt>Last Name</dt>
+        <dd>your last name</dd>
+        <dt>Date of Birth</dt>
+        <dd>your DOB</dd>
+       </dl>
+  </fieldset>
+
+  <fieldset>
+    <legend>Education Details</legend>
+    <dl>
+        <dt>School</dt>
+        <dd>your school name</dd>
+        <dt>College</dt>
+        <dd>your college name</dd>
+        <dt>Marks Percent</dt>
+        <dd>your marks..</dd>
+      </dl>
+  </fieldset>
+</body>
+</html>
