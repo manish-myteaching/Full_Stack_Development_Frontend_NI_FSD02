@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            border:2px solid black;
+            background-color: red;
+            color:white;
+        }
+        footer {
+            border:2px solid black;
+            background-color: lightcoral;
+            color:white;
+        }
+        nav {
+            background-color: yellow;
+            border:2px solid black;
+        }
+        aside {
+            background-color: blue;
+            color:white;
+        }
+        main {
+            background-color: lightgoldenrodyellow;
+            border:2px solid black;
+            height: 400px;
+        }
+        header,footer, nav, main, aside {
+            padding: 10px;
+            margin: 10px;
+        }
+        @media screen and (orientation:landscape) {
+            body {
+                display: grid;
+                grid-template-columns: 3fr 6fr 3fr;
+            }
+            header {
+                grid-row: 1;
+                grid-column: 1/4;
+            }
+            nav {
+                grid-row: 2;
+                grid-column: 1;
+            }
+            main {
+                grid-row: 2;
+                grid-column: 2;
+            }
+            aside {
+                grid-row: 2;
+                grid-column: 3;
+            }
+            footer {
+                grid-row: 3;
+                grid-column: 1/4;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body {
+                display: grid;
+                grid-template-columns: 12fr;
+            }
+            header {
+                grid-row: 1;
+            }
+            nav {
+                grid-row: 2;
+            }
+            main {
+                grid-row: 3;
+                height: 400px;
+            }
+            aside {
+                grid-row: 4;
+                display: none;
+            }
+            footer{
+                grid-row : 5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Nav
+    </nav>
+    <main>
+        Main
+    </main>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-image: url("../public/images/netflixbanner.jpg");
+            background-size: cover;
+            font-family: Arial;
+        }
+        .shade {
+            background-color: rgba(0,0,0,0.4);
+        }
+        .section-back {
+            background-color: rgba(0,0,0,0.8);
+            height: 800px;
+        }
+        hr {
+            color:rgb(67, 67, 67);
+        }
+    </style>
+</head>
+<body>
+    <div class="shade">
+        <header class="d-flex justify-content-between p-2">
+            <div>
+                <font face="Arial Black " size="7" color="red">N</font>
+                <font face="Arial Black " size="6" color="red">E</font>
+                <font face="Arial Black " size="6" color="red">T</font>
+                <font face="Arial Black " size="6" color="red">F</font>
+                <font face="Arial Black " size="6" color="red">L</font>
+                <font face="Arial Black " size="6" color="red">I</font>
+                <font face="Arial Black " size="7" color="red">X</font>
+            </div>
+            <div class="d-flex">
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <button data-bs-target="#items" data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">
+                            <span class="bi bi-globe"></span>
+                            <span>Language</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-dark" id="items">
+                            <div class="dropdown-item"> <span class="dropdown-text">English</span> </div>
+                            <div class="dropdown-item"> <span class="dropdown-text">हिंदी</span> </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="ms-3">
+                    <button class="btn btn-danger">Sign in</button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <main class="text-light d-flex justify-content-center text-center align-items-center" style="height:500px">
+               <div style="width:550px">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <h4 class="mt-2">Watch anywhere. Cancel anytime.</h4>
+                <p class="mt-4">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-group input-group-lg">
+                    <input class="form-control" type="email" placeholder="Your email address">
+                    <button class="btn btn-danger">
+                        <span>Get Started</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </button>
+                </div>
+               </div>
+            </main>
+        </section>
+       
+        <div class="section-back text-white">
+            <hr noshade size="20" color="gray">
+            <div class="banner-1 d-flex mt-4">
+               
+                <div class="ps-4">
+                    <h1 class="w-50">Enjoy on your TV.</h1>
+                    <h2 class="w-75">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+                </div>
+                <div>
+                    <img class="float-right" src="../public/images/banner1.png" width="300" height="300">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../node_modules/jquery/dist/jquery.js"> </script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

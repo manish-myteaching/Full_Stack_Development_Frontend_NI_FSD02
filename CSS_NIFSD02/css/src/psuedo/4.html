@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       p {
+        text-align: justify;
+       }
+       p::first-letter {
+         font-size: 60px;
+         font-family: Georgia;
+         float: left;
+         padding-right: 10px;
+       }
+       p::first-line {
+         color:red;
+       }
+       p::selection {
+         background-color: yellow;
+       }
+       ul {
+        list-style: none;
+        display: flex;
+       }
+       li::after {
+         content: " >> ";
+       }
+       li:last-child::after {
+        content: "";
+       }
+       li:last-child {
+         color:gray;
+       }
+       .Email::placeholder {
+          color:green;
+       }    
+    </style>
+</head>
+<body>
+    <input type="email" class="Email" placeholder="Your email address">
+   <ul>
+    <li>Shopper.</li>
+    <li>Home</li>
+    <li>Electronics</li>
+    <li>Mobiles</li>
+    <li>Samsung</li>
+   </ul>
+   <p>
+    We understand that you may have questions about the Microsoft Services Agreement. We have an FAQ page (https://www.microsoft.com/en-us/servicesagreement/upcoming-faq.aspx) that provides more information, including what Microsoft products and services it covers. Whenever we make changes, we provide a summary of the most notable changes to the current Microsoft Services Agreement. We will also continue to provide a summary of the changes to the previous version, and a link to the previous version, of the Microsoft Services Agreement on the Summary of Changes (https://www.microsoft.com/en-us/servicesagreement/upcoming-updates.aspx) page.
+   </p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:active {
+            color:red;
+        }
+        #line {
+            background-color: red;
+            width: 200px;
+            height: 20px;
+            transition: 2s;
+        }
+        #line:active {
+            width: 600px;
+            transition: 4s;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            transition: 3s;
+        }
+        img:hover {
+            width: 300px;
+            height: 300px;
+            transition: 3s;
+        }
+        span {
+            font-size: 40px;
+            font-weight: bold;
+            transition: 2s;
+            height: 100px;
+        }
+        span:hover {
+            font-size: 60px;
+            transition: 2s;
+        }
+    </style>
+<body>
+   <div style="height: 200px;">
+    <span>W</span>
+    <span>E</span>
+    <span>L</span>
+    <span>C</span>
+    <span>O</span>
+    <span>M</span>
+    <span>E</span>
+   </div>
+
+    <h1>CSS Active</h1>
+    <div id="line"></div>
+    <img src="../public/images/shoe.jpg">
+</body>
+</html>

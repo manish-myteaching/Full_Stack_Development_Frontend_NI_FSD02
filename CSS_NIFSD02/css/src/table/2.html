@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SetActive(){
+            document.getElementById("test").style.color = "red";
+        }
+        function SetDeactive(){
+            document.getElementById("test").style.color = "black";
+        }
+    </script>
+    <style>
+        h1:active {
+            color:red;
+        }
+    </style>
+<body>
+    <noscript>JavaScript is disabled</noscript>
+    <h1>CSS Active</h1>
+    <h2 id="test" onmouseup="SetDeactive()" onmousedown="SetActive()">Test by holding mouse button</h2>
+</body>
+</html>

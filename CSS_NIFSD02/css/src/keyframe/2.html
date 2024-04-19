@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        @keyframes title-effect {
+            from {
+                font-size: 5px;
+                margin-left: 120%;
+            }
+            50% {
+                font-size: 100px;
+                font-weight: bold;
+            }
+            to {
+                font-size: 5px;
+                margin-left: -20%;
+            }
+        }
+        .title {
+            animation-name: title-effect;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+   <span class="title">W</span>
+   <span >E</span>
+   <span >L</span>
+   <span >C</span>
+   <span >O</span>
+   <span >M</span>
+   <span >E</span>
+</body>
+</html>
+
