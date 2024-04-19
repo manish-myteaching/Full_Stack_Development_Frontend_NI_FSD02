@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headings</title>
+        <style>
+           ul {
+             list-style: none;
+             display: flex;
+           }
+           li::after {
+             content: " >> ";
+           }
+           li:last-child::after {
+            content: "";
+           }
+           li:last-child {
+             background-color: black;
+             color:white;
+           }
+           li {
+            background-color: darkcyan;
+            color:white;
+            padding: 3px;
+            border-top-right-radius: 15px;
+           }
+        </style>
+    </head>
+    <body>
+        <ul>
+           <li>Shopping</li>
+           <li>Home</li>
+           <li>Electronics</li>
+           <li>Smart Phones</li>
+           <li>RealMe</li>
+           <li>256GB</li>
+        </ul>
+    </body>
+</html>

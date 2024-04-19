@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            border:1px solid black;
+            width: 200px;
+            padding: 20px;
+        }
+        li {
+            padding:10px;
+        }
+    </style>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+   <form>
+      <fieldset>
+        <legend>Select Courses</legend>
+        <ul class="form-switch">
+            <li><input class="form-check-input" checked type="checkbox" value="UI" name="course"> UI Fullstack </li>
+            <li><input class="form-check-input" type="checkbox" value=".NET" name="course"> .NET </li>
+            <li><input class="form-check-input" type="checkbox" value="Java" name="course"> Java </li>
+            <li><input class="form-check-input" type="checkbox" value="Java" name="course"> PHP </li>
+            <li><input class="form-check-input" type="checkbox" value="Java" name="course"> Oracle </li>
+        </ul>
+        <button>Submit</button>
+      </fieldset>
+   </form>
+</body>
+</html>

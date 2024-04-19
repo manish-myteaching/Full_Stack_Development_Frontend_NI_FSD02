@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 10px;
+            box-shadow: 3px 3px 3px gray;
+        }
+        .card:target {
+            background-color: black;
+            color:white;
+        }
+        .container {
+            display: flex;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+        li {
+            margin-right: 30px;
+            font-size: 22px;
+            font-weight: bold;
+           
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+    </ul>
+    <div class="container">
+        <div class="card" id="html">
+            <h3>HTML</h3>
+            <p>It is a markup language</p>
+        </div>
+        <div class="card" id="css">
+            <h3>CSS</h3>
+            <p>It defines styles for HTML.</p>
+        </div>
+        <div class="card" id="js">
+            <h3>JavaScript</h3>
+            <p>It is a language for DOM.</p>
+        </div>
+    </div>
+</body>
+</html>

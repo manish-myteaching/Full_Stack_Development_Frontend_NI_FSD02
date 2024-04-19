@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th colspan="3">Address</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Postal Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="5" align="center">D<br>E<br>L<br>H<br>I</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" align="center">&copy; copyright 2022</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+Summary
+1. border
+2. frame
+3. rules
+4. cellspacing
+5. cellpadding
+6. align
+7. valign
+8. height
+9. width
+10. bgcolor
+11. background
+12. colspan
+13. rowspan
+
+Nested Table:
+- You can add a table with in another table only using <td> element.
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            box-shadow: 4px 4px 2px gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" cellspacing="10" cellpadding="15" border="1" frame="void">
+        <tr>
+            <td width="200">
+                <img src="../public/images/samsung.png" width="200" height="200">
+            </td>
+            <td width="300" align="center">
+                <table cellpadding="10" width="80%" height="100" rules="all">
+                    <colgroup span="1" style="background-color: yellow;"></colgroup>
+                    <tr>
+                        <td>Name</td>
+                        <td>Samsung Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>26000.33</td>
+                    </tr>
+                    <tr>
+                        <td>Stock</td>
+                        <td>Available</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <ul>
+                    <li> 6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>16.76 cm (6.6 inch) Full HD+ Display</li>
+                    <li>50MP + 8MP + 2MP | 8MP Front Camera</li>
+                    <li>5000 mAh Lithium Ion Battery</li>
+                    <li>Qualcomm Snapdragon 750G Processor</li>
+                    <li>1 Year Warranty Provided by the Manufacturer from Date of Purchase</li>
+                   </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="200">
+                <img src="../public/images/samsungBlue.png" width="200" height="200">
+            </td>
+            <td width="300" align="center">
+                <table cellpadding="10" width="80%" height="100"  rules="all">
+                    <colgroup span="1" style="background-color: yellow;"></colgroup>
+                    <tr>
+                        <td>Name</td>
+                        <td>Samsung Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>26000.33</td>
+                    </tr>
+                    <tr>
+                        <td>Stock</td>
+                        <td>Available</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <ul>
+                    <li> 6 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                    <li>16.76 cm (6.6 inch) Full HD+ Display</li>
+                    <li>50MP + 8MP + 2MP | 8MP Front Camera</li>
+                    <li>5000 mAh Lithium Ion Battery</li>
+                    <li>Qualcomm Snapdragon 750G Processor</li>
+                    <li>1 Year Warranty Provided by the Manufacturer from Date of Purchase</li>
+                   </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
