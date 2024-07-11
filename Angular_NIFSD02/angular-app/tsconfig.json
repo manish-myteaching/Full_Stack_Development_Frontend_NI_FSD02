@@ -1,0 +1,69 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "paths": {
+      "@common-library/feature": [
+        "./dist/common-library/feature"
+      ],
+      "@core/shared": [
+        "./dist/core/shared"
+      ],
+      "common-library": [
+        "./dist/common-library"
+      ],
+      "data": [
+        "./dist/data"
+      ],
+      "data-table": [
+        "./dist/data-table",
+        "./dist/data-table",
+        "./dist/data-table"
+      ],
+      "online-shopping-common-library": [
+        "./dist/online-shopping-common-library"
+      ],
+  
+      "order-detail-dashboard": [
+        "./dist/order-detail-dashboard"
+      ],
+      "product-table": [
+        "./dist/product-table"
+      ],
+
+      "shared": [
+        "./dist/shared"
+      ],
+      "vendor-table": [
+        "./dist/vendor-table"
+      ]
+    },
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "lib": [
+      "ES2022",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true,
+    "strictNullChecks": false
+  }
+}
